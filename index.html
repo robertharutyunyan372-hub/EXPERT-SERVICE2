@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<style>
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  #check:checked~nav {
+    transform: translateY(0);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+  }
+</style>
+
+
+<body class="bg-[#f1efe9]">
+  <header
+    class="w-[95.5%] my-[30px] mx-auto bg-black rounded-[15px] h-[80px]   p-10 justify-between items-center  flex ">
+    <a class="text-3xl text-white " href="">H.O'CONNER</a>
+    <label for="check" class="hidden  max-lg:flex">
+      <i class="fa-solid fa-bars text-white"></i>
+    </label>
+    <input type="checkbox" id="check" class="hidden">
+    <nav
+      class="max-lg:w-full max-lg:fixed max-lg:overflow-hidden max-lg:p-20 max-lg:right:0; max-lg:hidden max-lg:inset-0 max-lg:w-full max-lg:h-full max-lg:opacity-0 max-lg:translateY-3 max-lg:bg-black">
+      <label for="check" class=" absolute hidden text-white right-8 top-8 max-lg:flex">
+        <i class="fa-solid fa-xmark"></i></label>
+      <input type="checkbox" id="check" class="hidden">
+      <ul class="flex justify-center items-center gap-3 max-lg:flex-col gap-10 text-2xl">
+        <li><a class="text-white decoration-none  hover:text-orange-300  transition-[.4s]" href="">Home</a></li>
+        <li><a class="text-white decoration-none  hover:text-orange-300  transition-[.4s]" href="">Our Services</a></li>
+        <li><a class="text-white decoration-none  hover:text-orange-300  transition-[.4s]" href="">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="flex justify-center h-[100vh] max-md:flex-col max-lg:h-[70vh] max-md:h-auto gap-3 items-center p-6">
+    <div class="gap-5 w-[50%] max-md:w-full h-full text-3xl  flex flex-col justify-center items-center">
+      <div
+        class="w-full flex bg-white justify-center items-start max-md:flex-col py-[100px] max-sm:py-[50px] px-6 rounded-3xl bg-whiet flex-col gap-3 ">
+        <h1 class="text-7xl max-lg:text-5xl"><b>Expert <br> Service</b></h1>
+        <p>Keeping Your Vehicle at Its Best</p>
+        <button
+          class="hover:bg-orange-500 cursor-pointer bg-black text-xl py-2 px-3 text-white  rounded-[15px] transition-[.4s]">Learn
+          More</button>
+      </div>
+      <div
+        class="w-full h-[600px] max-sm:h-[300px] rounded-3xl bg-[url(https://static.wixstatic.com/media/11062b_fc50338fdebd4abc8a272e174ccf92a2~mv2.jpeg/v1/fill/w_1001,h_681,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_fc50338fdebd4abc8a272e174ccf92a2~mv2.jpeg)] bg-center bg-cover">
+      </div>
+    </div>
+    <div
+      class="w-[50%] max-md:w-full max-sm:h-[200px] h-[100%] max-md:h-[500px] rounded-3xl bg-cover bg-[url(https://static.wixstatic.com/media/11062b_65f1c830b88540bbb402656b2e6dccf0~mv2.jpeg/v1/fill/w_1001,h_1348,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_65f1c830b88540bbb402656b2e6dccf0~mv2.jpeg)]">
+    </div>
+  </div>
+  <section class="p-6 mx-auto ">
+    <div class="w-full my-[30px] mx-auto bg-black rounded-[15px] py-20  p-10 justify-center items-start flex-col flex ">
+      <h6 class=" text-white">About Us</h6>
+      <h1 class="text-white text-5xl ">Who We Are</h1>
+    </div>
+    <div class="flex gap-3 max-lg:flex-col">
+      <div
+        class="w-[30%] p-6 max-sm:auto h-[700px] max-lg:h-[500px] max-lg:w-full bg-center bg-cover rounded-3xl bg-[url(https://static.wixstatic.com/media/cbdea778dfbe4c5fac5de9c8d2587161.jpg/v1/fill/w_499,h_902,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cbdea778dfbe4c5fac5de9c8d2587161.jpg)]">
+      </div>
+      <div class="w-full gap-3 flex flex-col max-lg:text-1xl">
+        <div class="bg-white w-full px-6 py-12 rounded-3xl max-md:h-[300px] ">
+          <h2 class="text-4xl"><b>Our Mission</b></h2>
+          <p>At H. O'Connor, we are passionate about providing<br> top-notch auto care services to ensure your
+            vehicle<br>
+            remains
+            in prime condition. Our dedicated team is,<br> committed to delivering excellence, safety, and<br>
+            reliability in
+            every
+            service we offer.</p>
+        </div>
+        <div class=" h-full flex justify-between gap-6 items-center max-lg:flex-col-reverse rounded-3xl ">
+          <div
+            class="p-6 items-start flex flex-col h-[400px] w-full max-lg:w-full justify-center rounded-3xl bg-white ">
+            <h2 class="text-4xl">
+              <b>Why Choose Us</b>
+            </h2>
+            <p>With years of experience in the industry, we have<br> honed our skills to provide comprehensive<br>
+              maintenance
+              and repair solutions. Your satisfaction<br> and safety are at the core of everything we do.</p>
+          </div>
+          <img class="w-[400px] max-lg:w-full h-[400px] object-cover rounded-3xl "
+            src="https://static.wixstatic.com/media/11062b_6fa1b85f4d2641358651976556c89d21~mv2.jpg/v1/fill/w_509,h_446,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_6fa1b85f4d2641358651976556c89d21~mv2.jpg"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="p-10 flex flex-col justify-center items-center">
+      <h3>Our Service</h3>
+      <h1 class="text-6xl max-sm:text-4xl"><b>What We Offer</b></h1>
+    </div>
+    <div class="w-full flex gap-6 p-3 justify-center items-center max-lg:flex-col-reverse ">
+      <div class="flex flex-col max-lg:w-full justify-center items-center gap-6">
+        <ul class="w-full gap-6 flex flex-col p-6 ">
+          <li class="bg-white p-17.5 max-sm:p-3 flex justify-start items-start gap-3 rounded-3xl">
+            <span class="w-[60px] h-[60px] flex bg-[#f1efe9] rounded-xl justify-center items-center">01</span>
+            <div>
+              <h3 class="text-3xl max-lg:w-full"><b>Maintenance</b></h3>
+              <p>
+                Our maintenance services are designed<br> to keep your vehicle running smoothly<br> and efficiently.
+                From
+                oil
+                changes
+                to brake<br> inspections, we've got you covered.
+              </p>
+            </div>
+          </li>
+          <li class="bg-white max-sm:p-3 flex justify-start items-start gap-3 rounded-3xl">
+            <span class="w-[60px] h-[60px] flex bg-[#f1efe9] rounded-xl justify-center items-center">02</span>
+            <div>
+              <h3 class="text-3xl"><b>Diagnostic</b></h3>
+              <p>
+                Our diagnostic services help pinpoint<br> issues with your vehicle's engine,<br> ensuring accurate and
+                efficient
+                repairs to<br> get you back on the road quickly.
+              </p>
+            </div>
+          </li>
+          <li class="bg-white p-17.5 max-sm:p-3 flex justify-start items-start gap-3 rounded-3xl">
+            <span class="w-[60px] h-[60px] flex bg-[#f1efe9] rounded-xl justify-center items-center">03</span>
+            <div>
+              <h3 class="text-3xl"><b>Tire care</b></h3>
+              <p> Proper tire care is essential for safe<br> driving. We offer tire inspections,<br> rotations, and
+                replacements to
+                maintain<br> optimal performance and safety.</p>
+
+            </div>
+          </li>
+          <li class="bg-white p-17.5 max-sm:p-3 flex justify-start items-start gap-3 rounded-3xl">
+            <span class="w-[60px] h-[60px] flex bg-[#f1efe9] rounded-xl justify-center items-center">04</span>
+            <div>
+              <h3 class="text-3xl"><b>Brake Services</b></h3>
+              <p> Your safety is our priority, and our brake<br> services guarantee reliable and<br> effective brake
+                performance for your<br> peace of mind.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        class=" w-[55%] max-xl:w-[40%] bg-center bg-cover max-sm:h-[350px] max-lg:w-full rounded-3xl h-[1160px] bg-no-repead max-lg:w-full max-lg:h-[900px] max-lg:h-[500px]  bg-[url(https://static.wixstatic.com/media/11062b_971d65c3f74040c5895a156f8eff0592~mv2.jpeg/v1/fill/w_1001,h_1282,al_t,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_971d65c3f74040c5895a156f8eff0592~mv2.jpeg)]">
+      </div>
+    </div>
+    <div class="w-full flex justify-between max-lg:flex-col-reverse items-center p-10 gap-3 max-lg:">
+      <div
+        class=" w-[50%] h-[850px] max-sm:h-[300px] max-lg:w-full flex gap-6 items-start  justify-start bg-no-repeat bg-cover rounded-3xl  bg-[url(https://static.wixstatic.com/media/11062b_f8a21852d4a64b128aa2dfb6f4bcf779~mv2.jpeg/v1/fill/w_648,h_782,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_f8a21852d4a64b128aa2dfb6f4bcf779~mv2.jpeg)]">
+      </div>
+      <div class="w-[50%] max-lg:w-full h-[850px] max-sm:h-auto flex justify-start items-center flex">
+        <div class="flex flex-col gap-8 bg-white w-[100%] p-8 justify-center h-[850px] max-sm:h-auto rounded-3xl">
+          <h3 class="text-3xl"><b>What Clients Say</b></h3>
+          <ul class="flex justify-start items-start">
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+            <li><i class="fa-sharp fa-solid fa-star"></i></li>
+          </ul>
+          <p class="text-2xl">
+            “H. O'Connor is my go-to service for<br> all my car maintenance needs. Their<br> expertise and
+            professionalism are<br>
+            unmatched, and I always feel<br> confident in the quality of their work.”
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="flex bg-black justify-start items-center text-white p-3 overflow-hidden">
+    <div class="flex justify-start items-center gap-6 animate-[marquee_30s_linear_infinite]">
+
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+      <h1 class="min-w-max text-3xl">Get in Touch Today - Get in Touch Today - Get in Touch Today</h1>
+
+    </div>
+  </div>
+  <section class="py-24 px-6 flex gap-5 max-lg:flex-col-reverse">
+
+    <form class="flex p-12 flex-col w-[50%] gap-10 bg-white text-gray-800 rounded-2xl max-lg:w-full">
+      <h1 class="text-4xl"><b>Cantact US</b></h1>
+      <h3>Have a question or need to schedule a service? Reach out to us today!</h3>
+      <div class="relative flex justify-center items-center gap-15 max-sm:flex-col">
+        <label class="text-gray-700 mb-1 w-full gap-5">First name *
+          <input type="text" class="w-full border-b border-gray-400 py-2  bg-transparent" />
+        </label>
+
+        <label class="text-gray-700 mb-1 w-full gap-5">Last name *
+          <input type="text" class="w-full border-b border-gray-400 py-2  bg-transparent" />
+        </label>
+      </div>
+
+      <div class="relative flex justify-center items-center gap-15 max-sm:flex-col">
+        <label class="text-gray-700 mb-1 w-full gap-5">Email *
+          <input type="email" class="w-full border-b border-gray-400 py-2  bg-transparent" />
+        </label>
+
+        <label class="text-gray-700 mb-1 w-full gap-5">Phone
+          <input type="tel" class="w-full border-b border-gray-400 py-2 bg-transparent" />
+        </label>
+      </div>
+      <div class="">
+        <label for="" class="text-gray-700 mb-1">Mesage</label>
+        <input type="text" class="w-full border-b border-gray-400 py-2 bg-transparent" />
+      </div>
+      <button type="submit"
+        class=" max-sm:w-[100%] bg-black text-white px-12 py-3 rounded-full w-[30%] justify-center items-center mx-auto hover:bg-gray-800 transition-colors">Submit</button>
+    </form>
+    <div
+      class="w-[50%] h-[900px] max-sm:h-[300px] max-lg:w-full bg-no-repeat bg-cover rounded-3xl flex bg-[url(https://static.wixstatic.com/media/11062b_aac60e9bfcba4550a20a8a4ed5bf9aea~mv2_d_6153_3600_s_4_2.jpg/v1/fill/w_631,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_aac60e9bfcba4550a20a8a4ed5bf9aea~mv2_d_6153_3600_s_4_2.jpg)]">
+    </div>
+  </section>
+  <footer
+    class="w-[95.5%] my-[30px] mx-auto bg-black rounded-[15px] h-[500px] p-10  items-center justify-between flex max-sm:flex-col">
+    <div class="flex flex-col gap-20">
+      <a class="text-3xl text-white " href=""></a>
+      <h2 class="text-white text-5xl">H.O'CONNER</h2>
+      <ul class="flex flex-col gap-3">
+        <li class="text-white">123-456-7890</li>
+        <li class="text-white">info@mysite.com</li>
+        <li class="text-white">500 Terry Francine St. San</li>
+        <li class="text-white">Francisco, CA 94158</li>
+      </ul>
+    </div>
+    <div class="text-white text-sm">
+      <h3>Privacy Policy</h3>
+      <h3>Accessibility Statement</h3>
+      <h4>© 2035 by H. O'Connor. Powered and secured by Wix </h4>
+    </div>
+  </footer>
+</body>
+
+</html>
